@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600&display=swap');
+
+.navContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F8F9FA;
+    font-family: 'Noto Serif', serif;
+}
+
+.imageContainer, .cartContainer {
+    display: flex;
+    align-items: center;
+}
+
+.navbarIcon, .cartIcon {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.iconTitle {
+    align-items: center;
+    font-size: 18px;
+    line-height: 2.5;
+}
+
+.listContainer {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+    flex: 1;
+}
+
+.listContainer li {
+    list-style: none;
+    padding-right: 15px;
+    color:#919192;
+    cursor: pointer;
+}
+
+.listContainer li:hover {
+    color: #0157B3;
+}
+
+input[type=text] {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #38393a;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.cartContainer {
+    width: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cartIcon {
+    width: 30px;
+    height: 25px;
+}
+
+.cartNumber {
+    color: #ef3054;
+    font-weight: bolder;
+    position: relative;
+    top: 0;
+    right: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.loginButton, .signupButton {
+    border: none;
+    color: #fff;
+    background-color: #01AC45;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 16px;
+    font-family: 'Noto Serif', serif;
+    cursor: pointer;
+    margin-right: 15px;   
+}
+
+.togglerButton {
+    display: none;
+    padding: 10px;
+    border: 1px solid #F8F9FA;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    font-size: 24px;
+    margin-right: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+/* Responsive Navbar*/
+
+@media (max-width:800px) {
+    .navContainer {
+        display: flex;
+        width: 100%;
+        height: auto; 
+    }
+
+    .listContainer li {
+        padding-right: 8px;
+    }
+    .buttonContainer{
+        padding: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navContainer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+    }
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 15px;
+        row-gap: 15px;
+    }
+
+    .buttonContainer{
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+        padding: 15px;
+    }
+
+    .loginButton, .signupButton {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    input[type=text] {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .togglerButton {
+        display: block;
+    }
+}
+
+
+
+
